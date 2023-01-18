@@ -1,0 +1,5 @@
+@media (min-width: 1025px) {
+    header .search-input {
+        max-width: 300px;
+    }
+}

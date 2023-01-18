@@ -1,0 +1,12 @@
+@media (min-width: 576px) and (max-width: 1025px) {
+    .scroll-wrapper {
+        height: calc(100% - 56px) !important;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .scroll-wrapper {
+        height: calc(100% - 56px) !important;
+    }
+}

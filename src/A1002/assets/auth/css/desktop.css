@@ -1,0 +1,28 @@
+@media (min-width: 1025px) {
+    .form-wrapper .login-window .inner-footer {
+        flex-wrap: nowrap;
+    }
+
+    .form-wrapper .login-window .inner-footer > li:nth-child(2)::after,  
+    .form-wrapper .login-window .inner-footer > li:nth-child(2)::after
+    {
+        content: '·';
+        display: inline-block;
+    }
+
+    .form-wrapper .login-window .inner-footer {
+        padding: 0;
+        flex-wrap: wrap;
+        max-width: 336px;
+    }
+
+    .form-wrapper .login-window .inner-footer > li:nth-child(2)::after {
+        display: none;
+    }
+
+    .auth-app .main-view {
+        padding-left: 0;
+    }
+}
+
+

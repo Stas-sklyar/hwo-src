@@ -1,0 +1,11 @@
+@media (max-width: 575px) {
+    .scroll-wrapper {
+        height: calc(100% - 56px) !important;
+    }
+}
+
+@media (max-width: 411px) {
+    .scroll-wrapper {
+        height: calc(100% - 56px) !important;
+    }
+}

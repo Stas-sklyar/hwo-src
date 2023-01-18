@@ -1,0 +1,241 @@
+.input-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    padding: 5px 15px 10px 0px;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.input-wrapper-login {
+    padding-left: 15px !important;
+
+}
+
+.input-wrapper>label {
+    margin-bottom: 3px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px
+}
+
+.input-wrapper>input[type="text"],
+.input-wrapper>input[type="email"],
+.input-wrapper>.eyed>input[type="text"],
+.input-wrapper>.eyed>input[type="password"],
+.input-wrapper>textarea {
+    max-width: 700px;
+    background-color: transparent;
+    border-radius: 7px;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: none !important;
+    outline: none;
+    min-height: 35px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    border-color: #b4b4b4 !important;
+    padding: 0 9px;
+    font-size: 14px;
+    color: #b4b4b4;
+}
+
+.input-wrapper>input[type="text"],
+.input-wrapper>.eyed>input[type="text"],
+.input-wrapper>.eyed>input[type="password"],
+.input-wrapper>input[type="email"] {
+    height: 35px;
+    width: 100%;
+}
+
+.input-wrapper>textarea {
+    padding: 9px;
+    min-height: 120px;
+}
+
+.input-wrapper>input[type="text"]::-webkit-input-placeholder .input-wrapper>input[type="email"]::-webkit-input-placeholder,
+.input-wrapper>.eyed>input[type="text"]::-webkit-input-placeholder .input-wrapper>.eyed>input[type="password"]::-webkit-input-placeholder {
+    color: #616161 !important;
+}
+
+.input-wrapper>input[type="text"]:-ms-input-placeholder,
+.input-wrapper>input[type="email"]:-ms-input-placeholder,
+.input-wrapper>.eyed>input[type="text"]:-ms-input-placeholder,
+.input-wrapper>.eyed>input[type="password"]:-ms-input-placeholder {
+    color: #616161 !important;
+}
+
+.input-wrapper>input[type="text"]::placeholder,
+.input-wrapper>input[type="email"]::placeholder,
+.input-wrapper>.eyed>input[type="text"]::placeholder,
+.input-wrapper>.eyed>input[type="password"]::placeholder {
+    color: #616161 !important;
+}
+
+.input-wrapper>textarea::-webkit-input-placeholder {
+    color: #616161 !important;
+}
+
+.input-wrapper>textarea:-ms-input-placeholder {
+    color: #616161 !important;
+}
+
+.input-wrapper>textarea::placeholder {
+    color: #616161 !important;
+}
+
+.input-wrapper>input[type="text"][disabled],
+.input-wrapper>input[type="email"][disabled],
+.input-wrapper>.eyed>input[type="text"][disabled],
+.input-wrapper>.eyed>input[type="password"][disabled],
+.input-wrapper>textarea[disabled] {
+    border-color: #616161 !important;
+    color: #b4b4b4 !important;
+    background-color: #2f3034;
+}
+
+.input-wrapper>input[type="text"][readonly],
+.input-wrapper>input[type="email"][readonly],
+.input-wrapper>.eyed>input[type="text"][readonly],
+.input-wrapper>.eyed>input[type="password"][readonly],
+.input-wrapper>textarea[readonly] {
+    border-color: #616161 !important;
+    background-color: #2f3034;
+}
+
+.input-wrapper>input[type="text"].info,
+.input-wrapper>input[type="email"].info,
+.input-wrapper>.eyed>input[type="text"].info,
+.input-wrapper>.eyed>input[type="password"].info,
+.input-wrapper>textarea.info {
+    border-color: #4d7487 !important;
+}
+
+.input-wrapper>input[type="text"].warning,
+.input-wrapper>input[type="email"].warning,
+.input-wrapper>.eyed>input[type="text"].warning,
+.input-wrapper>.eyed>input[type="password"].warning,
+.input-wrapper>textarea.warning {
+    border-color: #ed9c28 !important;
+}
+
+.input-wrapper>input[type="text"].success,
+.input-wrapper>input[type="email"].success,
+.input-wrapper>.eyed>input[type="text"].success,
+.input-wrapper>.eyed>input[type="password"].success,
+.input-wrapper>textarea.success {
+    border-color: #47a447 !important;
+}
+
+.input-wrapper>input[type="text"].error,
+.input-wrapper>input[type="email"].error,
+.input-wrapper>.eyed>input[type="text"].error,
+.input-wrapper>.eyed>input[type="password"].error,
+.input-wrapper>textarea.error {
+    border-color: #de0000 !important;
+}
+
+.input-wrapper>input[type="text"].error1,
+.input-wrapper>input[type="email"].error1,
+.input-wrapper>.eyed>input[type="text"].error1,
+.input-wrapper>.eyed>input[type="password"].error1,
+.input-wrapper>textarea.error1 {
+    border-color: #ed9c28 !important;
+}
+
+.input-wrapper>input:not(.info, .warning, .error, .error1, .success)+span.message,
+.input-wrapper>.eyed:not(.info, .warning, .error, .error1, .success)+span.message {
+    display: none;
+}
+
+.input-wrapper>.eyed.error+span.message {
+    display: block;
+}
+
+.input-wrapper>input[type="text"]+span.message,
+.input-wrapper>input[type="email"]+span.message,
+.input-wrapper>.eyed+span.message,
+.input-wrapper>textarea+span.message {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.input-wrapper>input[type="text"].info+span.message,
+.input-wrapper>input[type="email"].info+span.message,
+.input-wrapper>.eyed>input[type="text"].info+span.message,
+.input-wrapper>.eyed>input[type="password"].info+span.message,
+.input-wrapper>textarea.info+span.message {
+    color: #4d7487 !important;
+}
+
+.input-wrapper>input[type="text"].warning+span.message,
+.input-wrapper>input[type="email"].warning+span.message,
+.input-wrapper>.eyed>input[type="text"].warning+span.message,
+.input-wrapper>.eyed>input[type="password"].warning+span.message,
+.input-wrapper>textarea.warning+span.message {
+    color: #ed9c28 !important;
+}
+
+.input-wrapper>input[type="text"].error+span.message,
+.input-wrapper>input[type="email"].error+span.message,
+.input-wrapper>.eyed.error+span.message,
+.input-wrapper>textarea.error+span.message {
+    color: #de0000 !important;
+}
+
+.input-wrapper>input[type="text"].error1+span.message,
+.input-wrapper>input[type="email"].error1+span.message,
+.input-wrapper>.eyed.error1+span.message,
+.input-wrapper>textarea.error+span.message1 {
+    color: #ed9c28 !important;
+}
+
+.input-wrapper>input[type="text"].success+span.message,
+.input-wrapper>input[type="email"].success+span.message,
+.input-wrapper>.eyed>input[type="text"].success+span.message,
+.input-wrapper>.eyed>input[type="password"].success+span.message,
+.input-wrapper>textarea.success+span.message {
+    color: #47a447 !important;
+}
+
+.input-wrapper>.eyed {
+    max-width: 700px;
+    height: 35px;
+}
+
+.input-wrapper>.eyed>.eye:hover {
+    cursor: pointer;
+}
+
+.input-wrapper>.eyed>.eye {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    top: -24px;
+    float: right;
+    right: 5px;
+}
+
+.input-wrapper>.eyed>.eye2:hover {
+    cursor: pointer;
+}
+
+.input-wrapper>.eyed>.eye2 {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    top: -24px;
+    float: right;
+    right: 5px;
+}
+
+.input-wrapper>input[type].transparent {
+    background-color: transparent;
+    border: 0 none;
+    padding-left: 0;
+    height: 25px;
+    min-height: unset;
+}

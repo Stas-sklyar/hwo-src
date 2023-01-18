@@ -1,0 +1,43 @@
+.application-inner .application-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.account-view-inner .subtitle1 {
+    font-size: 14px !important;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.account-view-inner .title2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 37px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.account-view-inner .subTitle2 {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.account-view-inner .colorDescription {
+    color: #b4b4b4;
+}
+
+.account-view-inner .input-wrapper {
+    width: 100%;
+}
+
+.account-view-inner .separator20 {
+    margin-top: 20px;
+}

@@ -1,0 +1,13 @@
+@media (min-width: 576px) and (max-width: 767px) {
+    .application-inner .application-content .app-main-view {
+        left: 0;
+        width: 100%;
+    }
+
+    .account-view-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    
+}

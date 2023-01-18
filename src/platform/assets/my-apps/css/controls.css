@@ -1,0 +1,48 @@
+header .search-input {
+    font-weight: 500;
+    font-size: 15px;
+    color: #8b8b8b;
+    height: 40px;
+    background-color: #1B1B1E;
+    padding: 10px 0px 10px 35px;
+    background-position: 12px 10px;
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-image: url('/img/Harmony/search.png');
+    border: 0 none;
+    outline: none;
+    min-width: 0px;
+}
+
+.avatar-icon {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arrow-down {
+    display: block;
+    width: 10px;
+    height: 8px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/img/Harmony/arrow_down.png');
+}
+
+.arrow-right {
+    display: block;
+    width: 8px;
+    height: 10px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/img/Harmony/arrow_right.png');
+}
+
+.arrow-right.gray {
+    background-image: url('/img/Harmony/arrow_right_gray.png');
+}

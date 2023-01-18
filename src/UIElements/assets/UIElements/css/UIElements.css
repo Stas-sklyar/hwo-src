@@ -1,0 +1,61 @@
+@import "UIElements/assets/Header/css/Header.css";
+@import "UIElements/assets/Heading/css/Heading.css";
+@import "UIElements/assets/Button/css/Button.css";
+@import "UIElements/assets/Input/css/Input.css";
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+a[href] {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+a[href]:hover {
+    color: #c9c9c9 !important;
+}
+
+.text-primary, * {
+    color: #ffffff;
+}
+
+.text-primary {
+    color: #ffffff !important;
+}
+
+.text-secondary {
+    color: #c9c9c9 !important;
+}
+
+.text-tertiary {
+    color: #b4b4b4 !important;
+}
+
+.text-quaternary {
+    color: #616161 !important;
+}
+
+.text-info {
+    color: #4d7487 !important;
+}
+
+.text-error {
+    color: #de0000 !important;
+}
+
+.text-warning {
+    color: #ed9c28 !important;
+}
+
+.text-success {
+    color: #47a447 !important;
+}

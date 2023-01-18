@@ -1,0 +1,164 @@
+.btn-group.select {
+    width: 190px;
+    max-width: 100%;
+    min-width: 190px;
+    height: 37px;
+    box-sizing: border-box;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+}
+
+
+.select > .value {
+    color: #b4b4b4;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 6px;
+    font-size: 13px;
+    flex-grow: 1;
+    background-color: #27282b;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.select > button.dropdown-toggle {
+    width: 22px;
+    min-width: 22px;
+    max-width: 22px;
+    margin-left: 0 !important;
+    box-sizing: border-box;
+    padding: 0;
+    border-left: 1px solid #b4b4b4;
+    background-color: #313236;
+    border-top: 0 none !important;
+    border-bottom: 0 none !important;
+    border-right: 0 none !important;
+    color: #b4b4b4;
+    outline: none;
+    user-select: none;
+}
+
+.select > button.dropdown-toggle:focus,
+.select > button.dropdown-toggle:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.select > button.dropdown-toggle::after {
+    margin-left: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+
+.dropdown-menu-platform-dark select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #27282b;
+    background-image: url("UIElements/assets/Dropdown/img/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position-x: 96%;
+    background-position-y: 50%;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    margin-right: 2rem!important;
+    padding: 7px;
+    padding-right: 20px;
+    font-size: 13px;
+    color: #b4b4b4;
+    margin: 0;
+    max-width: 270px;
+}
+
+.dropdown-menu-platform-dark option {
+    background: #27282b;
+    color: #b4b4b4;
+    height: 40px;
+    font-size: 17px;
+
+}
+
+.dropdown-menu-platform-dark option[disabled] {
+    color: #fff;
+    background-color: #3f4042;
+    font-size: 13px;
+}
+
+
+.dropdown-menu-platform-dark option:hover {
+    background-color: #3c3f44;
+}
+
+
+
+.dropdown-menu-platform-dark option:checked {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+}
+
+
+
+.dropdown-menu-platform-light select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f5f7f7;
+    background-image: url("UIElements/assets/Dropdown/img/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position-x: 96%;
+    background-position-y: 50%;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    margin-right: 2rem!important;
+    padding: 7px;
+    padding-right: 20px;
+    font-size: 13px;
+    color: #3d3d3d;
+    margin: 0;
+    max-width: 270px;
+}
+
+.dropdown-menu-platform-light option {
+    background-color: #f5f7f7;
+    color: #b4b4b4;
+    height: 40px;
+    font-size: 17px;
+    color: #3d3d3d;
+
+}
+
+.dropdown-menu-platform-light option:hover {
+    background-color: #3c3f44;
+}
+
+.dropdown-menu-platform-light option:checked {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+}
+
+.input-wrapper > .dropdown-menu-platform-light.error select {
+    border-color: #de0000 !important;
+}
+
+.input-wrapper > .dropdown-menu-platform-light:not(.info,.warning,.error, .error1,.success) + span.message {
+    display: none;
+}
+
+.input-wrapper > .dropdown-menu-platform-light + span.message {
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: -12px;
+}
+
+.input-wrapper > .dropdown-menu-platform-light.error + span.message {
+    font-size: 13px;
+    color: #de0000 !important;
+}

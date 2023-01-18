@@ -1,0 +1,47 @@
+@media (min-width: 576px) and (max-width: 1025px) {
+    .form-wrapper {
+        width: 576px;
+        max-width: 576px;
+    }
+
+    .form-wrapper .login-window .login-form {
+        width: 336px;
+        padding: 0;
+    }
+
+    .form-wrapper .login-window .inner-footer {
+        padding: 0;
+        flex-wrap: wrap;
+        max-width: 336px;
+    }
+
+    .form-wrapper .login-window .inner-footer > li:nth-child(2)::after {
+        display: none;
+    }
+}
+
+
+/*  LARGE TABLET  */
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .form-wrapper {
+        width: 730px;
+        max-width: 730px;
+    }
+
+    .form-wrapper .login-window .login-form {
+        padding: 0 55px;
+        width: 490px;
+    }
+
+    .form-wrapper .login-window .inner-footer {
+        padding: 0;
+        flex-wrap: wrap;
+        max-width: 336px;
+    }
+
+    .form-wrapper .login-window .inner-footer > li:nth-child(2)::after {
+        display: none;
+    }
+}
+

@@ -1,0 +1,354 @@
+.content-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.form-wrapper {
+    height: 560px;
+    min-height: 560px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    width: 730px;
+    max-width: 730px;
+    padding: 15px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.form-wrapper .login-window {
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form-wrapper .login-window > .view {
+    background-color: #ffffff;
+}
+
+.form-wrapper .login-window .window-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    overflow: hidden;
+}
+
+.form-wrapper .login-window .login-form,
+.form-wrapper .login-window .code-form,
+.form-wrapper .login-window .password-form
+{
+    height: 100%;
+    width: 490px;
+    position: relative;
+    padding: 0 55px;
+}
+
+.form-wrapper .login-window .login-form > *:not(.input-wrapper,.logo),
+.form-wrapper .login-window .code-form > *:not(.input-wrapper,.logo),
+.form-wrapper .login-window .password-form > *:not(.input-wrapper,.logo) {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form-wrapper .login-window .logo {
+    display: flex;
+    height: 73px;
+    width: 70px;
+    margin: 20px auto 0px auto;
+}
+
+.form-wrapper .login-window h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #3d3d3d;
+    margin-bottom: 0;
+    margin-top: 22px;
+}
+
+.form-wrapper .login-window h2 {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 17px;
+    font-size: 18px;
+    color: #353535;
+}
+
+.form-wrapper .login-window h3 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 12px;
+    color: #353535;
+}
+
+.form-wrapper .login-window .input-wrapper {
+    margin-top: 11px;
+    padding-bottom: 0;
+}
+
+.form-wrapper .login-window .input-wrapper > input::-webkit-input-placeholder,
+.form-wrapper .login-window .input-wrapper > .eyed > input::-webkit-input-placeholder {
+    color: #c9c9c9 !important;
+}
+.form-wrapper .login-window .input-wrapper > input:-ms-input-placeholder,
+.form-wrapper .login-window .input-wrapper > .eyed > input:-ms-input-placeholder {
+    color: #c9c9c9 !important;
+}
+.form-wrapper .login-window .input-wrapper > input::placeholder,
+.form-wrapper .login-window .input-wrapper > .eyed > input::placeholder {
+    color: #c9c9c9 !important;
+}
+
+.form-wrapper .login-window .input-wrapper > label[for] {
+    font-size: 14px;
+    color: #3d3d3d;
+    line-height: 14px;
+    margin-bottom: 6px;
+}
+
+.form-wrapper .login-window .input-wrapper > input,
+.form-wrapper .login-window .input-wrapper > .eyed > input {
+    background-color: #f5f7f7 !important;
+    font-size: 13px;
+    font-weight: 500;
+    color: #3d3d3d;
+}
+
+.form-wrapper .login-window .input-wrapper > input:focus,
+.form-wrapper .login-window .input-wrapper > .eyed > input:focus {
+    border-color: #4d7487 !important;
+}
+
+.form-wrapper .login-window .input-wrapper > input + span.message,
+.form-wrapper .login-window .input-wrapper > .eyed + span.message,
+.form-wrapper .login-window .input-wrapper > dropdown-menu-platform-light + span.message
+{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.form-wrapper .login-window .input-wrapper > .eyed {
+    background-image: url('UIElements/assets/Input/img/visibility.svg');
+}
+
+.form-wrapper .login-window .input-wrapper > .eyed.visible {
+    background-image: url('UIElements/assets/Input/img/no-visibility.svg');
+}
+
+.form-wrapper .login-window .actions-wrapper {
+    margin-top: 20px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+}
+
+/*.form-wrapper .login-window .loginBt  {
+    visibility: hidden;
+}*/
+
+/*.form-wrapper .login-window .pt-page-current .loginBt {
+    visibility: visible!important;
+}*/
+
+
+.form-wrapper .login-window .actions-wrapper button {
+    font-weight: 600;
+    font-size: 13px;
+    width: 140px;
+    padding-left: 0;
+    padding-right: 0;
+    color: #ffffff !important;
+    box-shadow: none;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+}
+.form-wrapper .login-window .actions-wrapper .register-link {
+    visibility: hidden;
+}
+
+.form-wrapper .login-window .actions-wrapper .register-link,
+.form-wrapper .login-window .actions-wrapper .login-link {
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #353535 !important;
+    text-decoration: none;
+}
+
+.form-wrapper .login-window .actions-wrapper .register-link:hover,
+.form-wrapper .login-window .actions-wrapper .login-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-wrapper .login-window .reset-password-link {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    color: #353535 !important;
+    display: block;
+    width: 210px;
+    margin-top: 18px;
+}
+
+.form-wrapper .login-window .reset-password-link:hover {
+
+}
+
+.form-wrapper .login-window .inner-footer {
+    font-size: 11px;
+    line-height: 15px;
+    position: absolute;
+    bottom: 13px;
+    font-weight: 500;
+    color: #3d3d3d;
+    list-style: none;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-wrapper .login-window .inner-footer > li,
+.form-wrapper .login-window .inner-footer > li span,
+.form-wrapper .login-window .inner-footer > li a {
+    color: inherit !important;
+    font: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.form-wrapper .login-window .inner-footer > li::after {
+    content: '\2022';
+    display: inline-block;
+    margin: 0 6px;
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+}
+
+.form-wrapper .login-window .inner-footer > li a:hover {
+    text-decoration: underline;
+}
+
+.form-wrapper .login-window .inner-footer > li:last-child::after {
+    content: '';
+    display: none;
+}
+
+.form-wrapper .login-window .login-image,
+.form-wrapper .login-window .signup-image {
+    height: 100%;
+    width: 210px;
+}
+
+
+.form-wrapper .form-footer {
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 500;
+    color: #c9c9c9;
+    list-style: none;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.form-wrapper .form-footer > li {
+    color: inherit;
+}
+
+.form-wrapper .form-footer > li::after {
+    content: '\2022';
+    display: inline-block;
+    margin: 0 6px;
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+}
+
+.form-wrapper .form-footer > li:last-child::after {
+    content: '';
+    display: none;
+}
+
+i.globe {
+    background-image: url('A1002/assets/auth/img/globe-europe-solid.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+    margin-left: 2px;
+}
+
+body, [data-content-root] {
+    background-color: #27282b;
+}
+
+#lge {
+    color: #c9c9c9;
+}
+
+.currentLangue {
+    color: #c9c9c9;
+}
+
+.form-wrapper .login-window #BirthYearData {
+    width: 190px;
+    font-weight: 500;
+}
+
+.form-wrapper .login-window .signupDescription {
+    color: #3d3d3d;
+    margin-bottom:-6px;
+    font-weight:300
+}
+
+.form-wrapper .login-window .bt-reset-pass {
+    width: 200px!important;
+}
+
+.form-wrapper .login-window .input-wrapper > input + span.message,
+.form-wrapper .login-window .input-wrapper > .eyed + span.message {
+    margin-bottom: -12px;
+}
+
+#help,
+#Bug {
+    text-decoration:none !important;
+    color: #b4b4b4 !important;
+    font-size: 13px;
+}
+
+#help:link:hover,
+#Bug:link:hover {
+    text-decoration:underline !important;
+}

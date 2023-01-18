@@ -1,0 +1,32 @@
+.account-view-inner .titleSectionConfidentiality {
+    font-weight: 300;
+    left: 0px;
+    font-size: 16px;
+}
+
+.account-view-inner .sectionConfidentiality {
+    font-weight: 300;
+    left: 0px;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+
+.account-view-inner .descriptionLabelConfidentiality{
+    position: relative;
+    display: block;
+    font-size: 13px;
+    top: -26px;
+    left: 50px;
+    line-height: 15px;
+    width: 91.5%;
+}
+
+.account-view-inner .separatorMin5 {
+    margin-top: -5px;
+}
+
+.account-view-inner .separatorMin14 {
+    margin-top: -14px;
+}
+
+

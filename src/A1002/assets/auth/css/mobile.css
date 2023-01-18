@@ -1,0 +1,69 @@
+@media (max-width: 575px) {
+    .form-wrapper {
+        max-width: 100%;
+        margin-top: 0;
+        height: 100%;
+    }
+
+    .form-wrapper .login-window {
+        height: calc(100% - 30px);
+    }
+
+    .form-wrapper .login-window .login-form,
+    .form-wrapper .login-window .code-form,
+    .form-wrapper .login-window .password-form
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .form-wrapper .login-window .login-image,
+    .form-wrapper .login-window .signup-image {
+        display: none;
+    }
+
+}
+
+@media (max-width: 510px) {
+    .form-wrapper .login-window .inner-footer {
+        padding: 0;
+        flex-wrap: wrap;
+        max-width: 336px;
+    }
+
+    .form-wrapper .login-window .inner-footer > li:nth-child(2)::after {
+        display: none;
+    }
+    
+    .form-wrapper .form-footer > li:first-of-type {
+        display: none;
+    }
+}
+
+@media (max-width: 411px) {
+    .form-wrapper {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .form-wrapper .login-window .login-form,
+    .form-wrapper .login-window .code-form,
+    .form-wrapper .login-window .password-form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .form-wrapper .login-window .login-image {
+        display: none;
+    }
+
+    .form-wrapper .login-window .inner-footer {
+        padding: 0;
+        flex-wrap: wrap;
+        max-width: 336px;
+    }
+
+    .form-wrapper .login-window .inner-footer > li:nth-child(2)::after {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+.account-view-inner .separator30 {
+    margin-top: 30px;
+}
+
+.account-view-inner .colorAdvanced {
+    color: #b4b4b4;
+}
+
+.account-view-inner .account_erase_bt {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.account-view-inner .descriptionDeleteAccountAdvanced {
+    line-height: 15px;
+    word-spacing: -1px;
+}

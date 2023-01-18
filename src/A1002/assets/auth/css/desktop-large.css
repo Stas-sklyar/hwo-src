@@ -1,0 +1,24 @@
+@media (min-width: 1200px) {
+
+    .form-wrapper .login-window .inner-footer {
+        padding: 0;
+        flex-wrap: wrap;
+        max-width: 336px;
+    }
+
+    .form-wrapper .login-window .inner-footer > li:nth-child(2)::after {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .form-wrapper .login-window .inner-footer {
+        padding: 0;
+        flex-wrap: wrap;
+        max-width: 336px;
+    }
+
+    .form-wrapper .login-window .inner-footer > li:nth-child(2)::after {
+        display: none;
+    }
+}

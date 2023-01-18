@@ -1,0 +1,40 @@
+@media (min-width: 576px) and (max-width: 767px) {
+   
+
+    .account-view-inner > .content-block,
+    .account-view-inner > .content-block > .input-wrapper,
+    .account-view-inner > .content-block > .input-wrapper > input[type="text"], 
+    .account-view-inner > .content-block > .input-wrapper > .eyed > input[type="text"], 
+    .account-view-inner > .content-block > .input-wrapper > .eyed > input[type="password"], 
+    .account-view-inner > .content-block > .input-wrapper > input[type="email"] {
+        width: 100% !important;
+    }
+
+    .account-view-inner .application-content .avatar-block-wrapper p {
+        width: 100%;
+        max-width: 610px;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 730px) and (max-width: 767px) {
+
+    .account-view-inner > .content-block {
+        width: 700px !important;
+    }
+
+    .account-view-inner > .content-block > .input-wrapper,
+    .account-view-inner > .content-block > .input-wrapper > input[type="text"], 
+    .account-view-inner > .content-block > .input-wrapper > .eyed > input[type="text"], 
+    .account-view-inner > .content-block > .input-wrapper > .eyed > input[type="password"], 
+    .account-view-inner > .content-block > .input-wrapper > input[type="email"] {
+        width: 100% !important;
+    }
+}
+
+
+/*  LARGE TABLET  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}

@@ -1,0 +1,78 @@
+label[for].radio {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 16px;
+    margin-bottom: 0.5rem;
+    margin-left: 0px !important;
+}
+
+label[for].radio>input[type="radio"] {
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+}
+
+label[for].radio>input[type="radio"]+.mark {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #27282b;
+    border: 1px solid #b4b4b4;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+label[for].radio>input[type="radio"]+.mark::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    background-color: #292c31;
+    top: 1px;
+    left: 1px;
+    opacity: 0;
+}
+
+label[for].radio>input[type="radio"]:checked+.mark::after {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    background-color: #b4b4b4;
+    opacity: 1;
+}
+
+label[for].radio>input[type="radio"][disabled]+.mark {
+    border-color: #616161;
+}
+
+label[for].radio>input[type="radio"][disabled]+.mark::after {
+    background-color: #373b42;
+}
+
+label[for].radio>input[type="radio"][disabled]:checked+.mark {
+    border-color: #616161;
+}
+
+label[for].radio>input[type="radio"][disabled]:checked+.mark::after {
+    background-color: #616161;
+}
+
+label[for].radio>input[type="radio"]+.mark+.label {
+    color: #b4b4b4;
+    font-size: 14px;
+}
+
+label[for].radio>input[type="radio"][disabled]+.mark+.label {
+    color: #616161;
+}

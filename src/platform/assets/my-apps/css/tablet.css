@@ -1,0 +1,56 @@
+@media (min-width: 576px) and (max-width: 1025px) {
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list {
+        max-width: 600px;
+        width: 600px;
+        margin-right: -50px;
+        margin-left: 30px;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item {
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        flex-basis: 20%;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item .app-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item .name-wrapper {
+        width: 60px;
+        height: 12px;
+        line-height: 12px;
+        font-size: 12px;
+    }
+}
+
+
+/*  LARGE TABLET  */
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list {
+        max-width: 770px;
+        width: 770px;
+        margin-right: -50px;
+        margin-left: 34px;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item {
+        margin-bottom: 50px;
+        padding-bottom: 24px;
+        flex-basis: 16.666666666666668%;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item .app-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item .name-wrapper {
+        width: 70px;
+        height: 13px;
+        line-height: 13px;
+        font-size: 13px;
+    }
+}

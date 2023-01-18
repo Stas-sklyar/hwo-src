@@ -1,0 +1,178 @@
+/*********************** Toggle ***********************/
+
+label[for].toggle {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    position: relative;
+    min-height: 20px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+label[for].toggle > input[type="checkbox"] {
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+}
+
+label[for].toggle > input[type="checkbox"] + .mark {
+    display: block;
+    position: relative;
+    width: 40px;
+    min-width: 40px;
+    height: 20px;
+    background-color: #3f434b;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+label[for].toggle > input[type="checkbox"] + .mark::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    background-color: #292c31;
+    top: 1px;
+    left: 1px;
+}
+
+label[for].toggle > input[type="checkbox"]:checked + .mark {
+    background-color: #ffffff;
+}
+
+label[for].toggle > input[type="checkbox"]:checked + .mark::after {
+    left: unset;
+    right: 1px;
+}
+
+label[for].toggle > input[type="checkbox"][disabled] + .mark {
+
+}
+
+label[for].toggle > input[type="checkbox"][disabled] + .mark::after {
+    background-color: #373b42;
+}
+
+label[for].toggle > input[type="checkbox"][disabled]:checked + .mark {
+
+}
+
+label[for].toggle > input[type="checkbox"][disabled]:checked + .mark::after {
+    background-color: #616161;
+}
+
+label[for].toggle > input[type="checkbox"] + .mark + .label {
+    color: #b4b4b4;
+    font-size: 15px;
+}
+
+label[for].toggle > input[type="checkbox"][disabled] + .mark + .label {
+    color: #616161;
+}
+
+/********************* End Toggle *********************/
+
+/*********************** Checkbox ***********************/
+
+label[for].checkbox {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+label[for].checkbox > input[type="checkbox"] {
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+}
+
+label[for].checkbox > input[type="checkbox"] + .mark {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #b4b4b4;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-right: 7px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label[for].checkbox > input[type="checkbox"] + .mark::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: none;
+    background-position: center;
+    background-size: 15px 12px;
+    background-repeat: no-repeat;
+}
+
+label[for].checkbox > input[type="checkbox"]:checked + .mark {
+    background-color: #b4b4b4;
+}
+
+label[for].checkbox > input[type="checkbox"]:checked + .mark::after {
+    background-image: url('UIElements/assets/CheckBox/img/check-mark.png');
+}
+
+label[for].checkbox > input[type="checkbox"][disabled] + .mark {
+    border-color: #616161;
+}
+
+label[for].checkbox > input[type="checkbox"][disabled] + .mark::after {
+
+}
+
+label[for].checkbox > input[type="checkbox"][disabled]:checked + .mark {
+    background-color: #616161;
+}
+
+label[for].checkbox > input[type="checkbox"][disabled]:checked + .mark::after {
+
+}
+
+label[for].checkbox > input[type="checkbox"] + .mark + .label {
+    color: #b4b4b4;
+    font-size: 13px;
+}
+
+label[for].checkbox > input[type="checkbox"][disabled] + .mark + .label {
+    color: #616161;
+}
+
+label[for].checkbox.error .mark{
+    border-color: #de0000 !important;
+}
+
+label[for].checkbox.error + span.message {
+    color: #de0000 !important;
+    font-size: 14px;
+    top: -11px;
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
+}
+label[for].checkbox:not(.error) + span.message {
+    visibility: hidden;
+}
+
+
+/********************* End Checkbox *********************/

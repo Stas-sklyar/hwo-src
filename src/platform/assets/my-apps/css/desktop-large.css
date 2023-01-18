@@ -1,0 +1,61 @@
+@media (min-width: 1200px) {
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list {
+        max-width: 1030px;
+        width: 1030px;
+        margin-right: -70px;
+        margin-left: 50px;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list>.app-item {
+        margin-bottom: 60px;
+        padding-bottom: 24px;
+        flex-basis: 16.666666666666668%;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list>.app-item .app-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list>.app-item .name-wrapper {
+        width: 90px;
+        height: 14px;
+        line-height: 14px;
+        font-size: 14px;
+    }
+
+    .dashboard-app .main-view {
+        padding-left: unset !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list {
+        max-width: 1160px;
+        width: 1160px;
+        margin-right: -80px;
+        margin-left: 52px;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list>.app-item {
+        margin-bottom: 60px;
+        padding-bottom: 24px;
+        flex-basis: 16.666666666666668%;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list>.app-item .app-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .application-dashboard .dashboard-content .apps-list-wrapper .apps-list>.app-item .name-wrapper {
+        width: 100px;
+        height: 14px;
+        line-height: 14px;
+        font-size: 14px;
+    }
+
+    .dashboard-app .main-view {
+        padding-left: unset !important;
+    }
+}

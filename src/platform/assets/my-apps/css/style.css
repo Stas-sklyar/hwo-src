@@ -1,0 +1,197 @@
+.application-dashboard {
+    width: 100%;
+    /* height: calc(100% - 40px); */
+    height: 100%;
+    position: relative;
+}
+
+.application-dashboard .background {
+    display: block;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.application-dashboard .background video {
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+.application-dashboard .background .bg-overlay {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.application-dashboard .dashboard-content {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.application-dashboard .dashboard-content .apps-list-wrapper {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 45px);
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: center;
+}
+
+.application-dashboard .dashboard-content .apps-list-wrapper .apps-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 10%;
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: unset;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item {
+    margin: 0;
+    position: relative;
+}
+
+.application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item .app-icon {
+    background-size: cover;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+.application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item .name-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+
+.application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item .app-name {
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    font-weight: 500;
+    height: 100%;
+    line-height: inherit;
+    font-size: inherit;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item.inactive .app-icon {
+    filter: grayscale(100%);
+}
+
+.application-dashboard .dashboard-content .dashboard-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    height: 45px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+}
+
+.application-dashboard .dashboard-content .dashboard-footer .quote-wrapper {
+    /* display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: center; */
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.application-dashboard .dashboard-content .dashboard-footer .quote-wrapper .quote {
+
+}
+
+.application-dashboard .dashboard-content .dashboard-footer .quote-wrapper .author {
+    margin-left: 3px;
+}
+
+
+.application-dashboard .dashboard-content .user-name {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    height: 33px;
+    margin-top: 22px;
+    margin-bottom: 0;
+}
+
+.application-dashboard .dashboard-content .system-time {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    height: 45px;
+    line-height: 55px;
+    margin-top: 15px;
+}
+
+.application-dashboard .dashboard-content .system-date {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    height: 23px;
+    margin-top: 7px;
+}
+
+.application-dashboard .dashboard-content .apps-list-wrapper .apps-list > .app-item.inactive .app-icon {
+    filter: grayscale(100%);
+}
+
+

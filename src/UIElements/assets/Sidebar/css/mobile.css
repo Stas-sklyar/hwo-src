@@ -1,0 +1,76 @@
+@media (max-width: 575px) {
+    .navbar.app-menu {
+        padding-top: 6px !important;
+        padding-bottom: 7px !important;
+        transform: translateX(0);
+        transition: transform .5s ease;
+        border-top: 1px solid #494949;
+        background-color: #262629;
+
+    }
+
+    .navbar.app-menu .navbar-collapse {
+        position: fixed;
+        top: 80px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .navbar.app-menu .navbar-nav .nav-item .nav-link {
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    .navbar.app-menu .navbar-toggler {
+        margin: 0;
+    }
+
+    .navbar.app-menu>.navbar-nav {
+        width: 100%;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .navbar.app-menu .navbar-collapse .nav-item {
+        margin-bottom: 2px;
+        background-color: #313336;
+
+    }
+
+    .navbar.app-menu .navbar-collapse .nav-item .nav-link {
+        width: 100%;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        padding: 0 14px;
+        height: 50px;
+    }
+
+    .navbar.app-menu .navbar-collapse .nav-item .nav-link span {
+        flex-grow: 1;
+        padding: 0 0 0 17px;
+        font-size: 13px;
+    }
+
+    .navbar.app-menu .navbar-nav .nav-item .icon {
+        font-size: 20px;
+    }
+
+    .navbar.app-menu .navbar-nav .nav-item span {
+        padding-top: 4px;
+    }
+
+    .navbar.app-menu .application-name {
+        display: none;
+    }
+}
+
+@media (max-width: 411px) {
+    .navbar.app-menu .navbar-nav .nav-item .icon {
+        font-size: 24px;
+    }
+
+    .navbar.app-menu .application-name {
+        display: none;
+    }
+}
